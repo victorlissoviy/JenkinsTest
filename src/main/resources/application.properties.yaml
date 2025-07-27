@@ -1,0 +1,23 @@
+# Application name
+spring:
+  application:
+    name: jenkins-test
+
+# Server configuration
+server:
+  port: 8080
+  servlet:
+    context-path: /jenkins-test
+  # Tomcat configuration
+  tomcat:
+    accesslog:
+      enabled: true
+
+# Logging configuration
+logging:
+  level:
+    org:
+      springframework: INFO
+      jenkins: DEBUG
+
+
